@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-sorting-courses/static/css/main.d2837822.css",
+    "main.js": "/react-sorting-courses/static/js/main.65f5e138.js",
+    "index.html": "/react-sorting-courses/index.html",
+    "main.d2837822.css.map": "/react-sorting-courses/static/css/main.d2837822.css.map",
+    "main.65f5e138.js.map": "/react-sorting-courses/static/js/main.65f5e138.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2837822.css",
+    "static/js/main.65f5e138.js"
+  ]
+}
