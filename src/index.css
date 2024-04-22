@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Navbar{
+    width: 100vw;
+    padding-block: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 26, 51);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.App-content{
+    width: 100vw;
+    background-color:rgb(67, 67, 69) ;
+}
+
+.card{
+    width: 320px;
+    border-radius: 7px;
+    background-color: rgb(36, 36, 56);
+}
+
+.card-cover{
+    width: 100%;
+    position: relative;
+}
+.card-cover img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;;
+}
+
+.card-icon{
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(245, 237, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card-info{
+    padding: 15px 12px;
+    color:white;
+}
+
+.card-info h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-info-readmore{
+    color:aqua;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.App-content{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(103, 103, 139);
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px 100px;
+    gap: 20px;
+    
+}
+
+.Filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding:25px 0;
+}
+
+.Filter-button{
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding:5px 8px;
+    background-color: rgb(36, 36, 54);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.Filter-button:focus{
+    border: 2px solid white;
+}
+
+.toast{
+   background-color: transparent;
+}
+
+.Spinner-container{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.Spinner-container{
+        color:whitesmoke;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgb(217, 214, 214);
+}
+
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    color: #e2f208;
+    border-radius: 50%;
+    display: grid;
+    background: 
+      conic-gradient(from 90deg at 4px 4px,#0000 90deg,currentColor 0)
+      -4px -4px/calc(50% + 2px) calc(50% + 2px),
+      radial-gradient(farthest-side,currentColor 6px,#0000 7px calc(100% - 6px),currentColor calc(100% - 5px)) no-repeat;
+    animation: l10 2s infinite linear;
+    position: relative;
+  }
+  .loader:before {
+    content: "";
+    border-radius: inherit;
+    background: inherit;
+    transform: rotate(45deg);
+  }
+  @keyframes l10 {to{transform: rotate(.5turn)}}
+
